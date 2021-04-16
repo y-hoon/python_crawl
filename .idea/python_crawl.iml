@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/Lib/site-packages/certifi" />
+      <excludeFolder url="file://$MODULE_DIR$/Lib/site-packages/certifi-2020.12.5.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/Lib/site-packages/chardet" />
+      <excludeFolder url="file://$MODULE_DIR$/Lib/site-packages/chardet-4.0.0.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/Lib/site-packages/idna" />
+      <excludeFolder url="file://$MODULE_DIR$/Lib/site-packages/idna-2.10.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/Lib/site-packages/lxml" />
+      <excludeFolder url="file://$MODULE_DIR$/Lib/site-packages/lxml-4.6.3.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/Lib/site-packages/requests" />
+      <excludeFolder url="file://$MODULE_DIR$/Lib/site-packages/requests-2.25.1.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/Lib/site-packages/urllib3" />
+      <excludeFolder url="file://$MODULE_DIR$/Lib/site-packages/urllib3-1.26.4.dist-info" />
+    </content>
     <orderEntry type="jdk" jdkName="Python 3.9 (python_crawl)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

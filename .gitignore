@@ -31,7 +31,6 @@ out/
 
 
 ### generated file ###
-include/
-lib/
-
-
+/include/
+/lib/
+/Scripts/
