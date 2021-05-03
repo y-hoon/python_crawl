@@ -16,5 +16,5 @@ class SiteRankItems(scrapy.Item):
     # 페이지 뷰
     daily_page_view = scrapy.Field()
     # 파이프라인 통과 여부
-    # is_pass = scrapy.Field()
+    is_pass = scrapy.Field()
 
