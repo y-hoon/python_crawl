@@ -18,6 +18,6 @@ class TestSpider(scrapy.Spider):
             item['site_name'] = p.xpath('div[@class="td DescriptionCell"]/p/a/text()').get()
             item['daily_time_site'] = p.xpath('div[@class="td right"]/p/text()').getall()[0]
             item['daily_page_view'] =  p.xpath('div[@class="td right"]/p/text()').getall()[1]
-            # print(item)
+
             yield item
 

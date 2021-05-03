@@ -63,9 +63,10 @@ DOWNLOAD_DELAY = 1
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'section04_2.pipelines.Section042Pipeline': 300,
-#}
+# 뒤에 숫자는 여러개의 pileline이 있을떄 실행순서, 숫자가 낮을수록 먼저 실행됨
+ITEM_PIPELINES = {
+   'section04_2.pipelines.TestSpiderPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
