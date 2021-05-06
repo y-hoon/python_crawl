@@ -34,7 +34,7 @@ class NewsSpider(CrawlSpider):
             yield scrapy.Request(article_url, self.parse_child, meta={'parent_url': response.url}, dont_filter=True)
 
     def parse_child(self, response):
-        print("test ing........")
+
         # 부모, 자식 수신 정보 로깅
         self.logger.info('====================================')
         self.logger.info('Response From Parent URL : %s' % response.meta['parent_url'])
@@ -42,3 +42,12 @@ class NewsSpider(CrawlSpider):
         self.logger.info('Child Response Status : %s' % response.status)
         self.logger.info('====================================')
 
+        # 헤드라인
+        headline = response.css('h3.tit_view::text').extract_first().strip()
+
+        # 본문
+        c_list = response.css('div.article_view p::text').extract()
+        contents = ''.join(c_list).strip()
+
+        yield ArticleItems(headline=headline, contents=contents, parent_link=response.meta['parent_url'],
+                           article_link=response.url)
