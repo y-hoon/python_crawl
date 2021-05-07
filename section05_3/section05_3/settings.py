@@ -24,8 +24,15 @@ DOWNLOAD_DELAY = 2
 # 쿠키 사용
 COOKIES_ENABLED = True
 
+# referer
 DEFAULT_REQUEST_HEADERS = {
   'Referer': 'https://news.daum.net/digital'
+}
+
+# 파이프라인 활성화
+# 숫자가 작을수록 우선순위 상위
+ITEM_PIPELINES = {
+  'section05_3.pipelines.NewsSpiderPipeline': 300,
 }
 
 # fake-useragent middleware 사용

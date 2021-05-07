@@ -15,3 +15,5 @@ class ArticleItems(scrapy.Item):
     parent_link = scrapy.Field()
     # 기사페이지
     article_link = scrapy.Field()
+    # 수집된 시간
+    crawled_time = scrapy.Field()
